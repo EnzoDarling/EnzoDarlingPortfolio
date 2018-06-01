@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).on("scroll",function(){$(window).scrollTop()>500?$("#navWrapper").addClass("navScrolled"):$("#navWrapper").removeClass("navScrolled")})});

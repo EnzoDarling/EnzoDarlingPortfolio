@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+html(lang="en")
+  include inc/header.pug
+  body#page-top
+    header
+      include inc/nav.pug
+    .HeaderMain.py-10
+      .HeaderContent.text-center
+        .HeaderInfo
+          h1.HeaderName Enzo Aguiar
+          h3.HeaderProf Tec. Superior en Análisis de Sistemas
+          h3.HeaderProf Desarrollador Web
+    //Projects
+    section.ShowCases#Proyectos
+      h2.text-center Proyectos
+      //Project Item
+      .showCase-Item.d-flex.flex-nowrap
+        .showCase-ImgWrapper.showCase-Img1.order-lg-2.order-md-1.order-sm-1.order-xs-1
+          img.showCaseImg.img-fluid(src="../img/masajeshwcase.png" height="100%")
+        .showCase-DescWrap.showCaseInfo1.order-lg-1.order-md-2.order-sm-2.order-xs-2
+          .showCase-Body
+            h3.text-center Sistema Masoterapéutico
+            p Sistema Web Masoterapeutico, almacenamiento y control de turnos, pacientes, fichas médicas mediante formularios CRUD.
+            .text-center
+              span.badge.badge-primary Symfony
+              span.badge.badge-success MySQL
+              span.badge.badge-primary Pug
+              span.badge.badge-success Sass
+              span.badge.badge-primary Bootstrap
+              span.badge.badge-success Font Awesome
+            .row.justify-content-center
+              a.miBoton(href="https://github.com/EnzoDarling/podologia-demo" target="_blank") Ver en Github
+              br
+              a.miBoton(href="/projects/podologia.html") Ver más
+      //Project Item
+      .showCase-Item.d-flex.flex-nowrap
+        .showCase-ImgWrapper.showCase-Img2.order-lg-1.order-md-1.order-sm-1.order-xs-1
+          img.showCaseImg(src="../img/ecv56shwcase.png" height="100%")
+        .showCase-DescWrap.showCaseInfo2.order-lg-2.order-md-1.order-sm-1.order-xs-1
+          .showCase-Body
+            h3.text-center ECV56 Ala Falcon
+            p Página del escuadrón de vuelo virtual ECV56 Condor Ala Falcon, secciones de introducción del escuadrón, campañas, misiones y escuelas de vuelo.
+            .text-center
+              span.badge.badge-primary Bootstrap
+              span.badge.badge-success Sass
+              span.badge.badge-primary Pug
+              span.badge.badge-success JavaScript
+            .row.justify-content-center
+              a.miBoton(href="https://github.com/EnzoDarling/ecv56condor" target="_blank") Ver en Github
+              br
+              a.miBoton(href="https://enzodarling.github.io/ecv56condor/" target="_blank") Ver Demo
+      //Project Item
+      .showCase-Item.d-flex.flex-nowrap
+        .showCase-ImgWrapper.showCase-Img3.order-lg-2.order-md-1.order-sm-1.order-xs-1
+          img.showCaseImg(src="/img/restaurantshwcase.png" width="100%")
+        .showCase-DescWrap.showCaseInfo3.order-lg-1.order-md-2.order-sm-2.order-xs-2
+          .showCase-Body
+            h3.text-center Restaurante "A su Provecho"
+            p Restaurante "A su Provecho" con servicio de tenedor libre, comidas para llevar y a domicilio.
+            .text-center
+              span.badge.badge-primary Bootstrap
+              span.badge.badge-success Sass
+              span.badge.badge-primary Pug
+              span.badge.badge-success JavaScript
+            .row.justify-content-center
+              a.miBoton(href="https://github.com/EnzoDarling/restaurant-web" target="_blank") Ver en Github
+              br
+              a.miBoton(href="https://enzodarling.github.io/restaurant-web/" target="_blank") Ver Demo
+      //Project Item
+      .showCase-Item.d-flex.flex-nowrap
+        .showCase-ImgWrapper.showCase-Img4.order-lg-1.order-md-2.order-sm-2.order-xs-2
+          img.showCaseImg.img-fluid(src="/img/podoshwcase4.png" height="100%")
+        .showCase-DescWrap.showCaseInfo4.order-lg-2.order-md-2.order-sm-2.order-xs-2
+          .showCase-Body
+            h3.text-center Sistema DevOps Podológico
+            p Sistema de control Podológico nativo en Java, gestión de turnos, pacientes, fichas médicas y vademécum del podólogo.
+            .text-center
+              span.badge.badge-primary Java
+              span.badge.badge-success PosgreSQL
+            .row.justify-content-center
+              a.miBoton(href="https://github.com/EnzoDarling/Java-Podologia" target="_blank") Ver en Github
+    //About Me
+    section.About#SobreMi.text-center
+      .AboutInfo.col-lg-12.col-md-12.col-sm-12.col-xs-12        
+        h2 Sobre Mi
+        img.rounded-circle(src="/img/foto.png", alt="")
+        p Mi nombre es Aguiar Enzo Nicolás y soy Tecnico Superior en Análisis de Sistemas graduado en el IESA (Instituto de Estudios Superiores Argentino) y Desarrollador Web, vivo en Posadas, Misiones, Argentina.
+        p Desarrollo aplicaciones web comenzando desde el análisis del escenario hasta la implementación, soporte al usuario y mantenimiento del sistema. Me apasiona la programación y estoy en constante investigación y aprendizaje ante nuevas tecnologías.        
+        br
+        br
+        a.miBoton(href="/vendor/docs/CV.pdf" target="_blank") Mi CV
+    //Contact
+    section.Contact#Contacto.text-center
+      h1 Contacto
+      .ContactLink
+        .LinkItem.col-md-6.col-sm-12
+          a.mailLink.miBoton(href="mailto:enzo.aguiar90@gmail.com")
+            i.fas.fa-envelope
+            | Enviame un mensaje
+        .LinkItem.col-md-6.col-sm-12
+          a.twitterLink.miBoton(href="http://www.twitter.com/EnzoDarling")
+            i.fab.fa-twitter
+            | Enviame un Tweet
+    include inc/footer.pug
