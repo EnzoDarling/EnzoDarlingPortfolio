@@ -5,11 +5,47 @@ html(lang="en")
     header
       include inc/nav.pug
     .HeaderMain.py-10
-      .HeaderContent.text-center
+      .HeaderContent.text-right
         .HeaderInfo
           h1.HeaderName Enzo Aguiar
           h3.HeaderProf Tec. Superior en Análisis de Sistemas
           h3.HeaderProf Desarrollador Web
+    //Skills
+    .container.py-5.Skills
+      h1.text-center.Skills-Title Habilidades
+      .row.justify-content-center.p-5
+        .col-md-4.justify-content-between
+          .Skill-item
+            p.py-4 Lorem ipsum dolor sit amet.
+            .progress(style="height: 20px;")
+              .progress-bar(role="progressbar", style="width: 55%;", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .col-md-4
+          .Skill-item
+            p.py-4 Lorem ipsum dolor sit amet.
+            .progress(style="height: 20px;")
+              .progress-bar(role="progressbar", style="width: 55%;", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .col-md-4
+          .Skill-item
+            p.py-4 Lorem ipsum dolor sit amet.
+            .progress(style="height: 20px;")
+              .progress-bar(role="progressbar", style="width: 55%;", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+      .row.justify-content-center.p-5
+        .col-md-4
+          .Skill-item
+            p.py-4 Lorem ipsum dolor sit amet.
+            .progress(style="height: 20px;")
+              .progress-bar(role="progressbar", style="width: 55%;", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .col-md-4
+          .Skill-item
+            p.py-4 Lorem ipsum dolor sit amet.
+            .progress(style="height: 20px;")
+              .progress-bar(role="progressbar", style="width: 55%;", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .col-md-4
+          .Skill-item
+            p.py-4 Lorem ipsum dolor sit amet.
+            .progress(style="height: 20px;")
+              .progress-bar(role="progressbar", style="width: 55%;", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+
     //Projects
     section.ShowCases#Proyectos
       h2.text-center Proyectos
@@ -78,14 +114,14 @@ html(lang="en")
               span.badge.badge-primary Java
               span.badge.badge-success PosgreSQL
             .row.justify-content-center
-              a.miBoton(href="https://github.com/EnzoDarling/Java-Podologia" target="_blank") Ver en Github
+              a.miBoton(href="https://github.com/EnzoDarling/Java-Podologia" target="_blank") Ver más
     //About Me
     section.About#SobreMi.text-center
-      .AboutInfo.col-lg-12.col-md-12.col-sm-12.col-xs-12        
+      .AboutInfo.col-lg-12.col-md-12.col-sm-12.col-xs-12
         h2 Sobre Mi
         img.rounded-circle(src="/img/foto.png", alt="")
         p Mi nombre es Aguiar Enzo Nicolás y soy Tecnico Superior en Análisis de Sistemas graduado en el IESA (Instituto de Estudios Superiores Argentino) y Desarrollador Web, vivo en Posadas, Misiones, Argentina.
-        p Desarrollo aplicaciones web comenzando desde el análisis del escenario hasta la implementación, soporte al usuario y mantenimiento del sistema. Me apasiona la programación y estoy en constante investigación y aprendizaje ante nuevas tecnologías.        
+        p Desarrollo aplicaciones web comenzando desde el análisis del escenario hasta la implementación, soporte al usuario y mantenimiento del sistema. Me apasiona la programación y estoy en constante investigación y aprendizaje ante nuevas tecnologías.
         br
         br
         a.miBoton(href="/vendor/docs/CV.pdf" target="_blank") Mi CV

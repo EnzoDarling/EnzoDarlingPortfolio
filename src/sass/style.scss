@@ -11,10 +11,15 @@ body {
     text-transform: uppercase;
     .nav-item{
       padding: 0px 20px;
+      font-weight: 600;
     }
   }
 }
 .HeaderMain {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 700px, rgba(255, 255, 255, 1) 290px), url(../img/headerbg.jpg) no-repeat;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: $Montserrat;
   margin: 0;
   padding: 0;
@@ -25,6 +30,7 @@ body {
   text-decoration: none;
   font-size: 1.5em;
   border: 1px solid $brandblue;
+  border-radius: 25px;
   padding: 10px 20px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -58,7 +64,7 @@ body {
   height: 100vh;
   width: 100%;
   top: 10%;
-  padding-top: 200px;
+  padding-top: 100px;
   border-bottom: 1px solid #e3e3e3;
   .HeaderInfo {
     font-family: $Montserrat;
@@ -69,6 +75,7 @@ body {
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 10px;
+      text-shadow: 5px 5px 20px #e6e6e6;
     }
     h3 {
       padding: 10px 0px;
@@ -76,7 +83,15 @@ body {
     }
   }
 }
-
+.Skills{
+  .Skills-Title{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .progress-bar{
+    background: $brandgreen;
+  }
+}
 .ShowCases {
   padding: 100px 20px;
   h2 {
@@ -113,6 +128,9 @@ body {
         margin: 0px 10px;
         font-size: 1em;
         text-decoration: none;
+      }
+      .badge{
+        font-weight: 300;
       }
     }
   }
@@ -177,27 +195,30 @@ body {
   }
 }
 .Footer {
-  position: absolute;
+  display: block;
+  width: 100%;
   background: $brandblue;
-  padding: 40px 0px;
+  height: 100px;
   color: $lightwhite;
   .CrName {
+    padding: 30px 0px;
+    bottom: 0;
     font-size: 1.2em;
-    position: relative;
   }
   .FootLinks {
     justify-content: space-around;
+    padding: 30px 0px;
     a {
       color: $lightwhite;
       font-size: 1.5em;
-      padding: 5px 0px;
+      padding: 10px 20px;
       margin: 0px 20px;
       border-radius: 10px;
       text-decoration: none;
       justify-content: space-around;
       &:hover {
-        background: $brandgreen;
-        transition: background 200ms ease-in-out 0.1s;
+        color: $brandgreen;
+        transition: color 200ms ease-in-out 0.1s;
       }
     }
   }
